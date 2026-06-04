@@ -45,20 +45,30 @@ ternary operator (toán tử điều kiện): cách viết ngắn gọn cho if..
     - Các thao tác với mảng:
         - thêm phần tử vào mảng (push, unshift, splice)
             - push: thêm vào cuối
+                - VD: array.push(4);
             - unshift: thêm vào đầu
+                - VD: array.unshift(1);
             - splice: thêm vào giữa -> splice(<vị trí>, <số phần tử cần xóa>, <số phần từ cần thêm vào>)
+                - VD: array.splic(2,0,1.5);
         - xóa phần tử khỏi mảng (pop, shift, splice)
             - pop: xóa ở cuối
+                - VD: array.pop()
             - shift(): xóa ở đầu
+                - VD: array.shift()
             - splice(): xóa ở vị trí bất kì -> splice(<vị trí>,<số phần tử cần xóa>)
+                - VD: array.splice(1,1)
         - tìm kiểm (find, filter)
             - find: trả về phần tử đầu tiên hợp lệ
+                - VD: array.find(num => num > 10)
             - filter(): trả về tất cả các phần tử hợp lệ
+                - VD: array.filter(num => num > 10)
         - biến đổi mảng (map)
             - map(): tạo mảng mới bằng các áp dụng 1 hàm lên từng phần tử của mảng gốc. Trả về mảng mới có cùng độ dài
+                - VD: array.map(num => num * 2)
         - sắp xếp mảng (sort)
-            - sort((a,b) => a-b): 
+            - sort((a,b) => a-b): sắp xếp tăng dần
                 - so sánh từng cặp phần tử a và b
                 - trả về số âm: a đứng trước b
                 - trả về số dương: b đứng trước a
                 - trả về 0: giữ nguyên thứ tự
+            - sort((a,b) => b-a): sắp xếp giảm dần
